@@ -8,55 +8,91 @@
     android:background="#9DBD89"
     tools:context=".MainActivity">
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout"
-        android:layout_width="272dp"
-        android:layout_height="57dp"
-        android:layout_marginTop="76dp"
-        app:layout_constraintBottom_toBottomOf="@+id/username"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.993">
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <EditText
-        android:id="@+id/password"
-        android:layout_width="273dp"
-        android:layout_height="58dp"
-        android:layout_marginTop="52dp"
-        android:background="#7EBBC3"
-        android:ems="10"
-        android:inputType="textPassword"
-        android:text="password1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
-
-    <Button
-        android:id="@+id/login"
-        android:layout_width="201dp"
-        android:layout_height="106dp"
-        android:layout_marginTop="36dp"
-        android:backgroundTint="#7EBBC3"
-        android:text="Login"
-        android:textColor="#000000"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password" />
-
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/username"
         android:layout_width="273dp"
         android:layout_height="58dp"
+        android:layout_marginTop="192dp"
         android:background="#7EBBC3"
         android:backgroundTint="#7EBBC3"
-        android:hint="username"
+        android:hint="Username"
         android:inputType="text"
         android:textColor="#000000"
-        tools:layout_editor_absoluteX="69dp"
-        tools:layout_editor_absoluteY="227dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/password"
+        android:layout_width="273dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="10dp"
+        android:background="#7EBBC3"
+        android:hint="Password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="122dp"
+        android:layout_height="74dp"
+        android:layout_marginBottom="316dp"
+        android:backgroundTint="#7EBBC3"
+        android:text="Login"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.245"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="122dp"
+        android:layout_height="74dp"
+        android:layout_marginBottom="316dp"
+        android:backgroundTint="#7EBBC3"
+        android:text="Logout"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.281"
+        app:layout_constraintStart_toEndOf="@+id/login" />
+
+    <Button
+        android:id="@+id/page"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="72dp"
+        android:backgroundTint="#7EBBC3"
+        android:text="Page"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.72"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/loginreload"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="72dp"
+        android:backgroundTint="#7EBBC3"
+        android:text="Login"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.245"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/infotext"
+        android:layout_width="190dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="192dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
