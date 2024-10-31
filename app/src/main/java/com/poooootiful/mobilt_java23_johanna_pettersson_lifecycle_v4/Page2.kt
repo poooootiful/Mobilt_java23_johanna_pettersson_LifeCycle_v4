@@ -27,7 +27,7 @@ class Page2 :AppCompatActivity(){
         val phone:Any = findViewById<EditText>(R.id.phone).text
         val camping = findViewById<CheckBox>(R.id.beencamping)
         val text = findViewById<TextView>(R.id.infotext2)
-
+        
         savedpassword = password.toString()
         savedusername = username.toString()
         savedbirthday = birthday.toString()
